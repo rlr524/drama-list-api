@@ -1,0 +1,7 @@
+spring.application.name=drama-list-api
+spring.datasource.url=jdbc:sqlserver://saber;databaseName=DramaList
+spring.datasource.username=
+spring.datasource.password=
+spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=validate
