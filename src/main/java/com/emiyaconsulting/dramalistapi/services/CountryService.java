@@ -6,7 +6,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
-import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -17,7 +16,7 @@ public class CountryService {
         this.countryRepository = countryRepository;
     }
 
-    public List<Country> list() {
+    public Iterable<Country> list() {
         return countryRepository.findAll();
     }
 
