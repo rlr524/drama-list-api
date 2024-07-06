@@ -9,5 +9,4 @@ public class DramaListApiApplication {
     public static void main(String[] args) {
         SpringApplication.run(DramaListApiApplication.class, args);
     }
-
 }

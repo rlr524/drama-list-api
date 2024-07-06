@@ -1,11 +1,11 @@
 GO
-CREATE SEQUENCE genre_seq START WITH 1 INCREMENT BY 50
+CREATE SEQUENCE tag_seq START WITH 1 INCREMENT BY 50
 GO
 
-CREATE TABLE genre
+CREATE TABLE tag
 (
-    id         bigint NOT NULL,
-    genre_name varchar(255),
-    CONSTRAINT pk_genre PRIMARY KEY (id)
+    id       bigint NOT NULL,
+    tag_name varchar(255),
+    CONSTRAINT pk_tag PRIMARY KEY (id)
 )
 GO

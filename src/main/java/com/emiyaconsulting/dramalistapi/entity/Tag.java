@@ -7,24 +7,13 @@ import java.util.Set;
 
 @Entity
 @Data
-public class Drama {
+public class Tag {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
-    private String dramaName;
-
-    private int year;
-
-    private float rating;
-
-    private String imageURL;
-
-    private int countryID;
+    private String tagName;
 
     @ManyToMany
-    private Set<Genre> genres;
-
-    @ManyToMany
-    private Set<Tag> tags;
+    private Set<Drama> dramas;
 }
