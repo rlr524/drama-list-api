@@ -27,7 +27,7 @@ public class CountryService {
     public Country get(Long id) {
         Optional<Country> countryOptional = countryRepository.findById(id);
         if (countryOptional.isEmpty()) {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Title not found");
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Country not found");
         }
         return countryOptional.get();
     }
@@ -36,7 +36,7 @@ public class CountryService {
         Optional<Country> countryOptional = countryRepository.findById(id);
         if (countryOptional.isEmpty()) {
             throw new ResponseStatusException(
-                    org.springframework.http.HttpStatus.NOT_FOUND, "Title not found");
+                    org.springframework.http.HttpStatus.NOT_FOUND, "Country not found");
         }
         Country existingCountry = countryOptional.get();
         existingCountry.setCountryName(country.getCountryName());

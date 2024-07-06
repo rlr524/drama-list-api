@@ -1,11 +1,11 @@
 GO
-CREATE SEQUENCE country_seq START WITH 1 INCREMENT BY 50
+CREATE SEQUENCE genre_seq START WITH 1 INCREMENT BY 50
 GO
 
-CREATE TABLE country
+CREATE TABLE genre
 (
-    id           bigint NOT NULL,
-    country_name varchar(255),
-    CONSTRAINT pk_country PRIMARY KEY (id)
+    id         bigint NOT NULL,
+    genre_name varchar(255),
+    CONSTRAINT pk_genre PRIMARY KEY (id)
 )
 GO
