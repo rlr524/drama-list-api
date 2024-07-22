@@ -22,6 +22,8 @@ public class Drama {
 
     private int countryID;
 
+    private int episodes;
+
     @ManyToMany
     private Set<Genre> genres;
 
