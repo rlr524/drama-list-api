@@ -1,4 +1,4 @@
-package com.emiyaconsulting.dramalistapi.dao;
+package com.emiyaconsulting.dramalistapi.repositories;
 
 import com.emiyaconsulting.dramalistapi.entity.Country;
 import org.springframework.data.repository.CrudRepository;

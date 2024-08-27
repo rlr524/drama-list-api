@@ -1,7 +1,7 @@
 package com.emiyaconsulting.dramalistapi.services;
 
-import com.emiyaconsulting.dramalistapi.dao.CountryRepository;
 import com.emiyaconsulting.dramalistapi.entity.Country;
+import com.emiyaconsulting.dramalistapi.repositories.CountryRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;

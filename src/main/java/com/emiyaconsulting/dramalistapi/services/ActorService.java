@@ -1,7 +1,7 @@
 package com.emiyaconsulting.dramalistapi.services;
 
-import com.emiyaconsulting.dramalistapi.dao.ActorRepository;
 import com.emiyaconsulting.dramalistapi.entity.Actor;
+import com.emiyaconsulting.dramalistapi.repositories.ActorRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
@@ -10,6 +10,8 @@ import java.util.Optional;
 
 @Service
 public class ActorService {
+    // Often you will see the implementation of the repository (in this case, the service) implement
+    // the repository directly, however we are choosing to favor a composition pattern here. 
     private final ActorRepository actorRepository;
 
     public ActorService(ActorRepository actorRepository) {

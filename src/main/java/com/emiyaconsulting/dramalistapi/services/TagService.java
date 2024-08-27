@@ -1,7 +1,7 @@
 package com.emiyaconsulting.dramalistapi.services;
 
-import com.emiyaconsulting.dramalistapi.dao.TagRepository;
 import com.emiyaconsulting.dramalistapi.entity.Tag;
+import com.emiyaconsulting.dramalistapi.repositories.TagRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
